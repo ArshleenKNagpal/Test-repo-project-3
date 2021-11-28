@@ -1,0 +1,110 @@
+:root {
+  --cal1: grey;
+  --cal2: black;
+  --cal3: white;
+}
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* overflow: hidden; */
+}
+
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.small {
+  font-weight: 300;
+  font-style: italic;
+} */
+
+.btn-create-goals {
+  @apply bg-green-500 hover:text-white hover:bg-green-700  hover:no-underline text-white font-bold py-14 px-28 rounded bottom-1 mt-20 shadow-2xl;
+}
+
+.btn-schedule {
+  @apply bg-green-500 hover:text-white hover:bg-green-700 hover:no-underline text-white font-bold py-14 px-28 rounded bottom-1 mt-20 shadow-2xl;
+}
+
+.navbar-style {
+  @apply bg-gradient-to-r from-gray-100 via-green-400 to-green-700;
+}
+
+.banner {
+  @apply rounded-2xl shadow-2xl;
+}
+
+.daily-review {
+  @apply flex justify-center;
+}
+
+.logo {
+  height: 5vh;
+  margin-right: 5px;
+}
+
+.schedule-container {
+  height: 95vh;
+  background: var(--cal2);
+  overflow: hidden;
+}
+
+.calendar-container {
+  /* background-image: url("../src/images/StudiouslyLogo.jpg"); */
+  margin: auto;
+  margin-top: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding: auto;
+  width: 75%;
+  height: 45vh;
+  background: var(--cal1);
+  border: 2px solid var(--cal2);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.calgoal-container {
+  /* background-image: url("../src/images/StudiouslyLogo.jpg"); */
+  margin: auto;
+  margin-bottom: 5vh;
+  padding: 5vh;
+  width: 90%;
+  height: 40vh;
+  background: var(--cal1);
+  border: 2px solid var(--cal2);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav-link:hover {
+  @apply bg-green-900 text-white;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav-link {
+  @apply font-medium text-white;
+}
+
+.layout {
+  padding: 0 10rem;
+}
+
+/* AUTH FORM STYLING */
+
+.form {
+  width: 100%;
+  max-width: 30rem;
+  margin: 5rem auto;
+}
